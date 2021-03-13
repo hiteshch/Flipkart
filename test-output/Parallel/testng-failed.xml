@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Parallel]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="SingleTestIE(failed)">
+    <parameter name="environment" value="ie"/>
+    <parameter name="config" value="single.conf.json"/>
+    <classes>
+      <class name="com.flipkart.qa.tests.ProductPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="productPageValidation"/>
+        </methods>
+      </class> <!-- com.flipkart.qa.tests.ProductPageTest -->
+    </classes>
+  </test> <!-- SingleTestIE(failed) -->
+</suite> <!-- Failed suite [Parallel] -->
