@@ -62,7 +62,8 @@ public class BrowserStackTestBase {
         if(app != null && !app.isEmpty()) {
           capabilities.setCapability("app", app);
         }
-
+        String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
+        capabilities.setCapability("build", buildName); // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
    /*     if(capabilities.getCapability("browserstack.local") != null && capabilities.getCapability("browserstack.local") == "true"){
             l = new Local();
             Map<String, String> options = new HashMap<String, String>();
