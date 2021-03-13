@@ -1,0 +1,25 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "hiteshchaurasia1",
+  "key": "6hATUMGhZmyGjkNiZpqg",
+
+  "capabilities": {
+    "name": "Bstack-[TestNG] Sample Test",
+    "browserstack.debug": true
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome"
+    }
+    "firefox": {
+      "browser": "firefox"
+    },
+    "safari": {
+      "browser": "safari"
+    },
+    "ie": {
+      "browser": "internet explorer"
+    } 
+  }
+}
