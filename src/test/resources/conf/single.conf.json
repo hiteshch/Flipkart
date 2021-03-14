@@ -1,7 +1,7 @@
 {
   "server": "hub-cloud.browserstack.com",
-  "user": "hiteshchaurasia1",
-  "key": "6hATUMGhZmyGjkNiZpqg",
+  "user": "hitesh247",
+  "key": "ne5sNxpSPjA2xMacMDAy",
 
   "capabilities": {
     "name": "Bstack-[TestNG] Sample Test",

@@ -19,7 +19,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BrowserStackTestBase {
-   // private static final String localIdentifier = "foobar_${Math.round(Math.random() * 100)}_${Date.now()}";
+ 
 	public static WebDriver driver;
     private Local l;
     
@@ -64,7 +64,8 @@ public class BrowserStackTestBase {
         }
         String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
         capabilities.setCapability("build", buildName); // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
-   /*     if(capabilities.getCapability("browserstack.local") != null && capabilities.getCapability("browserstack.local") == "true"){
+
+        /*     if(capabilities.getCapability("browserstack.local") != null && capabilities.getCapability("browserstack.local") == "true"){
             l = new Local();
             Map<String, String> options = new HashMap<String, String>();
             options.put("key", accessKey);
@@ -78,7 +79,6 @@ public class BrowserStackTestBase {
 		driver.manage().deleteAllCookies();
 	//	driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
     	driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-    	//String url = (String) config.get("uri");
     	driver.get("https://www.flipkart.com/");
     }
 

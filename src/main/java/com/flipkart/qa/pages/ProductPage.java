@@ -85,9 +85,9 @@ public class ProductPage extends BrowserStackTestBase{
 		
 		 for(int i=0;i<productPrice.size();i++) {
 			
-				  String product_price = productPrice.get(i).getText();//Iterate and fetch product price
-				  product_price = product_price.replaceAll("[^0-9]", "");//Replace anything wil space other than numbers 
-				  int int_product_price = Integer.parseInt(product_price);//Convert to Integer
+				  String product_price = productPrice.get(i).getText();	
+				  product_price = product_price.replaceAll("[^0-9]", ""); 
+				  int int_product_price = Integer.parseInt(product_price);
 				  System.out.println(int_product_price + " "); 
 				  
 				  }

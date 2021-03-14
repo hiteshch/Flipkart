@@ -19,7 +19,6 @@ public class ProductPageTest extends BrowserStackTestBase{   //BrowserStack
 	
 	@BeforeMethod
 	public void setUp() throws Exception {
-	//	driver.get("https://www.flipkart.com/");
 	//	intialization();
 		homepage = new HomePage();
 		homepage.cancelSignIn();
