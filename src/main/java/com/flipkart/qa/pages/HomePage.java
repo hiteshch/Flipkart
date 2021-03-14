@@ -10,7 +10,7 @@ import com.flipkart.qa.base.TestBase;
 
 public class HomePage extends BrowserStackTestBase{
 	
-	@FindBy(xpath="//*[@class='_2KpZ6l _2doB4z']")
+	@FindBy(xpath="//*[@class='_2KpZ6l _2doB4z']")  
 	WebElement sign_in_cross;
 	
 	@FindBy(name="q")

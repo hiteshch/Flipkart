@@ -61,7 +61,7 @@ public class ProductPage extends BrowserStackTestBase{
 	}
 	
 	public void setFAssured() {	
-	    js.executeScript("arguments[0].scrollIntoView();", fAssured); 
+//	    js.executeScript("arguments[0].scrollIntoView();", fAssured); 
 	    js.executeScript("arguments[0].click();", fAssured);
 	    try {
 			Thread.sleep(3000);
